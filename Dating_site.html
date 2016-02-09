@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Dating Site!
+	</title>
+</head>
+
+<body>
+
+<form>
+
+<h2>Please Enter Your Details For Our Dating Website!</h2>
+
+<fieldset>
+	<legend>Your Face</legend>
+	<label for="choosefile">Your image:</label>
+		<input type="file" id="choosefile" required><br/>
+	<label for="preview">Image preview:</label>
+		<image id = "preview">
+</fieldset><br/>
+	
+<fieldset>
+	<legend>Your General Details</legend>
+	<label for="input_name">Name:</label>
+		<input type="text" id="input_name" placeholder="Your full name" required><br/>
+	Gender:
+		<input type="radio" name="gender" id="male" required>
+			<label for="male">Male</label>
+		<input type="radio" name="gender" id="female">
+			<label for="female">Female</label><br/>
+	<label for="age">Age:</label>
+		<input type="number" id="age" min="0" max="200" required><br/>
+	<label for="date">Date of birth:</label>
+		<input type="date" id="date"><br/>
+	<label for="color">Favorite color:</label>
+		<input type="color" id="color"><br/>
+	<label for="country">Which country:</label>
+		<select id="country">
+			<option></option>	
+			<option>India</option>
+			<option>USA</option>
+			<option>Japan</option>
+			<option>China</option>
+			<option>Spain</option>
+		</select>	
+</fieldset><br/>
+
+<fieldset>
+	<legend>Your Indicator</legend>
+		<label for="height">Height: </label>
+			Short<input type="range" id="height">Tall <br/>
+		<label for="salary">Salary: </label>
+			Poor<input type="range" id="salary">Rich
+</fieldset><br/>
+
+<fieldset>
+	<legend>Your Contact Information</legend>
+		<label for="email">Email:</label>
+			<input type="email" id="email" required><br/>
+		<label for="mobile">Mobile:</label>
+			<input type="tel" id="mobile"><br/>
+		<label for="address">Address:</label>
+			<textarea id="address"></textarea><br/>
+		Method to contact you: 
+			<input type="checkbox" name="contact" id="email_check" value = "email">
+				<label for="email_check">Email</label>
+			<input type="checkbox" name="contact" id="whatsapp_check">
+				<label for="whatsapp_check">Whatsapp</label>
+			<input type="checkbox" name="contact" id="chat_check">
+				<label for="chat_check">In-app chat</label>
+</fieldset>
+
+</form>
+
+<!--<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>-->
+
+
+</body>
+
+</html>
